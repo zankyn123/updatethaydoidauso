@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <android.support.constraint.ConstraintLayout
+
+        android:id="@+id/layoutTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/borderdialog"
+
+        android:paddingTop="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        >
+
+
+        <TextView
+
+            android:id="@+id/title_diglog_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+
+            android:background="@drawable/backgroundtitledialog1"
+            android:gravity="center"
+            android:paddingLeft="21dp"
+            android:paddingRight="21dp"
+            android:text="@string/title_dialog"
+
+            android:textColor="#000"
+            android:textSize="12sp"
+            android:fontFamily=""
+            app:layout_constraintBottom_toTopOf="@id/layoutNumbers"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/contactName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingEnd="2dp"
+            android:paddingTop="5dp"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:text="@string/contactnumberOld"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/title_diglog_tv"
+            app:layout_constraintBottom_toTopOf="@id/layoutNumbers"
+
+            />
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/layoutNumbers"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+
+            android:paddingBottom="10dp"
+            app:layout_constraintBottom_toTopOf="@id/layoutBtn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/title_diglog_tv">
+
+            <TextView
+                android:id="@+id/contactNumberOld"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ff0000"
+                android:paddingEnd="2dp"
+                android:paddingTop="2dp"
+                android:text="@string/contactnumberOld"
+                app:layout_constraintEnd_toStartOf="@id/Image"
+                app:layout_constraintStart_toStartOf="parent"
+
+                />
+
+
+            <ImageView
+                android:id="@+id/Image"
+                android:layout_width="17dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_fast_forward_black_24dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="parent"
+                app:layout_constraintStart_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="parent" />
+
+            <TextView
+                android:id="@+id/contactNumberNew"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#0042ff"
+                android:paddingStart="2dp"
+                android:paddingTop="2dp"
+                android:text="@string/contactnumberNew"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/Image" />
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/layoutBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingBottom="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/layoutNumbers"
+
+            >
+
+            <Button
+                android:id="@+id/btn_no"
+                android:layout_width="70dp"
+                android:layout_height="20dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/backgroundbtn"
+                android:text="@string/txt_no"
+                android:textColor="#fff"
+                android:textSize="13dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/btn_yes"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+
+                />
+
+            <Button
+                android:id="@+id/btn_yes"
+                android:layout_width="70dp"
+                android:layout_height="20dp"
+                android:background="@drawable/backgroundbtn"
+                android:text="@string/txt_yes"
+                android:textColor="#fff"
+
+                android:textSize="13dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>

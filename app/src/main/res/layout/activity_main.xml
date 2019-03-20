@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        >
+
+        <LinearLayout
+            android:id="@+id/layoutTitleMainTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/updateall_tv"
+            >
+
+            <TextView
+                android:id="@+id/tenmucluc"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:paddingBottom="10dp"
+                android:text="@string/tieude_mucluc"
+                android:textColor="#e01a32"
+                app:layout_constraintEnd_toStartOf="@id/updateall_tv"
+                app:layout_constraintStart_toStartOf="parent"
+
+                />
+        </LinearLayout>
+
+
+
+            <Button
+
+                android:id="@+id/updateall_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:background="@color/colorPrimaryDark"
+                android:text="Sửa tất"
+                android:textColor="@color/colorAccent"
+                app:layout_constraintEnd_toEndOf="parent"
+
+                />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        ></ListView>
+
+
+</LinearLayout>
